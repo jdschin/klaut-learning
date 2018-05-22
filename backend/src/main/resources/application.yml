@@ -9,7 +9,7 @@ spring:
   redis:
     host: redis-19050.c17.us-east-1-4.ec2.cloud.redislabs.com
     port: 19050
-    password:
+    password: ${REDIS_PASSWORD}
 
   servlet:
     multipart:
@@ -18,8 +18,8 @@ spring:
 
 amazon:
   aws:
-    accesskey:
-    secretkey:
+    accesskey: ${AWS_ACCESSKEY}
+    secretkey: ${AWS_SECRETKEY}
     bucketName: mediafilescad
 
 ---
